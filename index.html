@@ -13,49 +13,58 @@
     <main>
       <div class="title__container">
         <h1 class="main__title">
-          Notifications <span id="notifications_num">3</span>
+          Notifications
+          <span
+            id="notifications_num"
+            aria-labelledby="Nuber of unread notifications"
+            >2</span
+          >
         </h1>
         <button class="btn__read" id="btn_read">Mark all as read</button>
       </div>
       <ul class="main__list">
-        <li class="list__item">
+        <li class="list__item active">
           <img
             src="images/avatar-mark-webber.webp"
             alt=""
             class="profile__img"
           />
           <div>
-            <p class="list__text">
-              <span class="list__text--name">Mark Webber</span>reacted to your
-              recent post
-              <span class="list__text--news">My first tournament today!</span>
+            <p class="list__text active">
+              <span class="list__text--name"> <a href=""> Mark Webber</a></span>
+              reacted to your recent post
+              <span class="list__text--news"><a href="">  My first tournament today!</a></span>
             </p>
             <p class="list__time">1m ago</p>
           </div>
         </li>
-        <li class="list__item">
+        <li class="list__item active">
           <img
             src="images/avatar-angela-gray.webp"
             alt=""
             class="profile__img"
           />
           <div>
-            <p class="list__text">
-              <span class="list__text--name">Angela Gray</span>followed you
+            <p class="list__text active">
+              <span class="list__text--name"> <a href=""> Angela Gray</a></span>
+              followed you
             </p>
             <p class="list__time">5m ago</p>
           </div>
         </li>
-        <li class="list__item">
+        <li class="list__item active">
           <img
             src="images/avatar-jacob-thompson.webp"
             alt=""
             class="profile__img"
           />
           <div>
-            <p class="list__text">
-              <span class="list__text--name">Jacob Thompson</span>has joined
-              your group <span class="list__text--news">Chess Club</span>
+            <p class="list__text active">
+              <span class="list__text--name">
+                <a href=""> Jacob Thompson</a></span
+              >
+              has joined your group
+              <span class="list__text--news"><a href="">> Chess Club</a</span>
             </p>
             <p class="list__time">1day ago</p>
           </div>
@@ -68,16 +77,18 @@
           />
           <div>
             <p class="list__text">
-              <span class="list__text--name"> Rizky Hasanuddin</span>sent you a
-              private message
+              <span class="list__text--name">
+                <a href=""> Rizky Hasanuddin</a></span
+              >
+              sent you a private message
             </p>
             <p class="list__time">5days ago</p>
+            <p class="list__msg"><a href="">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.</a>
+            </p>
           </div>
-          <p class="list__msg">
-            Hello, thanks for setting up the Chess Club. I've been a member for
-            a few weeks now and I'm already having lots of fun and improving my
-            game.
-          </p>
         </li>
         <li class="list__item">
           <img
@@ -87,12 +98,14 @@
           />
           <div>
             <p class="list__text">
-              <span class="list__text--name">Kimberly Smith</span>commented on
-              your picture
+              <span class="list__text--name">
+                <a href=""> Kimberly Smith</a></span
+              >
+              commented on your picture
             </p>
             <p class="list__time">1 week ago</p>
           </div>
-          <img src="images/image-chess.webp" alt="" />
+          <img src="images/image-chess.webp" alt="" id="chess__img" />
         </li>
         <li class="list__item">
           <img
@@ -102,10 +115,12 @@
           />
           <div>
             <p class="list__text">
-              <span class="list__text--name">Nathan Peterson</span>reacted to
-              your recent post
+              <span class="list__text--name">
+                <a href=""> Nathan Peterson</a></span
+              >
+              reacted to your recent post
               <span class="list__text--news">
-                5 end-game strategies to increase your win rate
+                <a href="">5 end-game strategies to increase your win rate</a> 
               </span>
             </p>
             <p class="list__time">2 weeks ago</p>
@@ -115,8 +130,9 @@
           <img src="images/avatar-anna-kim.webp" alt="" class="profile__img" />
           <div>
             <p class="list__text">
-              <span class="list__text--name">Anna Kim</span>has left the group
-              <span class="list__text--news">Chess Club</span>
+              <span class="list__text--name"><a href=""> Anna Kim</a></span>
+              left the group
+              <span class="list__text--news"><a href=""> Chess Club</a></span>
             </p>
             <p class="list__time">2 weeks ago</p>
           </div>

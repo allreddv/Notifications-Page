@@ -47,6 +47,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .main__title {
@@ -61,6 +62,10 @@ main {
     padding: .3rem 1.2rem;
     border-radius: 6px;
     margin-left: .9rem;
+}
+
+.btn__read:hover {
+    color: var(--Blue);
 }
 
 .main__list {
@@ -79,6 +84,11 @@ main {
     display: flex;
     gap: 1.3rem;
     padding: 1.6rem;
+    border-radius: 8px;
+}
+
+.list__item.active {
+    background-color: #F7FAFD ;
 }
 
 .list__text { 
@@ -86,5 +96,64 @@ main {
 }
 
 .list__time {
-    margin-top: .3rem;
+    margin-top: .4rem;
+}
+
+.list__text--name {
+    color: var(--Very-dark-blue);
+    font-weight: 800;
+}
+
+.list__text--name:hover {
+    color: var(--Blue);
+}
+
+.list__text--news {
+    font-weight: 700;
+}
+.list__text--news:hover {
+    color: var(--Blue);
+}
+
+.list__text.active::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--Red);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.list__msg {
+    margin-top: 1.2rem;
+    border: 1px solid var(--Light-grayish-blue-2);
+    padding: 1.6rem;
+    line-height: 1.8rem;
+    border-radius: 5px ;
+}
+
+.list__msg:hover {
+    background-color: var(--Light-grayish-blue-1) ;
+}
+
+#chess__img {
+    width: 3.9rem;
+    height: 3.9rem;
+}
+
+  
+/* --------------------------------------------------------------------------------------------------------
+                                    Desktop
+-------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 960px) {
+
+        main {
+            color: #0A327B;
+        }
+
+
+}
+    
 }
