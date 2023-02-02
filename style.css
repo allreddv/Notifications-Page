@@ -1,0 +1,90 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;800&display=swap');
+
+
+/* --------------------------------------------------------------------------------------------------------
+                                    Variables
+-------------------------------------------------------------------------------------------------------- */
+
+
+
+:root {
+
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+
+--White: hsl(0, 0%, 100%);
+--Very-light-grayish-blue: hsl(210, 60%, 98%);
+--Light-grayish-blue-1: hsl(211, 68%, 94%);
+--Light-grayish-blue-2: hsl(205, 33%, 90%);
+--Grayish-blue: hsl(219, 14%, 63%);
+--Dark-grayish-blue: hsl(219, 12%, 42%);
+--Very-dark-blue: hsl(224, 21%, 14%);
+
+}
+
+html {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------
+                                    Mobile First
+-------------------------------------------------------------------------------------------------------- */
+
+body {
+    font-size: 1.4rem;
+    color: var(--Dark-grayish-blue);
+    min-height: 100vh;
+}
+
+main {
+    padding: 2.4rem 1.6rem 2.8rem ;
+}
+
+.title__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__title {
+    font-size: 2rem ;
+    color: var(--Very-dark-blue);
+    font-weight: 800;
+}
+
+#notifications_num {
+    background-color: #0A327B;
+    color: white;
+    padding: .3rem 1.2rem;
+    border-radius: 6px;
+    margin-left: .9rem;
+}
+
+.main__list {
+    margin-top: 2.4rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile__img {
+    height: 3.9rem;
+    width: 3.9rem;
+}
+
+.list__item {
+    display: flex;
+    gap: 1.3rem;
+    padding: 1.6rem;
+}
+
+.list__text { 
+    line-height: 1.76rem ;
+}
+
+.list__time {
+    margin-top: .3rem;
+}
