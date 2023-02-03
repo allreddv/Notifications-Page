@@ -181,6 +181,13 @@ main {
             height: 4.5rem;
         }
 
+        #chess__img {
+            margin-left: 18rem;
+        }
+
+        #rizky {
+            color: var(--Very-dark-blue);
+        }
 
 }
     
