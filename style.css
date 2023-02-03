@@ -149,11 +149,37 @@ main {
 
 @media screen and (min-width: 960px) {
 
+
+    body  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Very-light-grayish-blue);
+        font-size: 1.6rem;
+       
+    }
+
         main {
-            color: #0A327B;
+            width: 73rem ;
+            background-color: var(--White);
+            padding: 3.3rem 3rem 0rem ;
+            box-shadow: 0px 20px 60px rgba(73, 97, 168, 0.05);
+            border-radius: 15px;
+        }
+
+        .main__list {
+            margin-top: 3.1rem;
+        }
+
+        .list__item {
+            padding: 1.8rem 2rem;
+        }
+
+        .profile__img, #chess__img {
+            width: 4.5rem;
+            height: 4.5rem;
         }
 
 
 }
     
-}
